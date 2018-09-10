@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>用户信息</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" type="text/css" href="../lib/jquery-easyui-1.6.3/themes/default/easyui.css">
+  <link rel="stylesheet" type="text/css" href="../lib/jquery-easyui-1.6.3/themes/icon.css">
+    
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/vue.min.js"></script>
+<script src="../lib/jquery-easyui-1.6.3/jquery.easyui.min.js"></script>
+<body>
+    <table class="easyui-datagrid" title="Basic DataGrid" style="width:700px;height:250px"
+            data-options="singleSelect:true,collapsible:true,url:'../user/list',method:'get'">
+        <thead>
+            <tr>
+                <th data-options="field:'id',width:80">id</th>
+                <th data-options="field:'name',width:100">name</th>
+                <th data-options="field:'age',width:80,align:'right'">age</th>
+            </tr>
+        </thead>
+    </table>
+ 
+<script language="javascript" type="text/javascript">
+
+</script>
+</body>
+</html>

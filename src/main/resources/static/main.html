@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>用户信息</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<script src="lib/jquery.min.js"></script>
+<script src="lib/vue.min.js"></script>
+<script src="lib/jqgrid/grid.locale-cn.js"></script>
+<script src="lib/jqgrid/jquery.jqGrid.min.js"></script>
+
+<style type="text/css">
+#bg{display:none;position:fixed;top:0;left:0;bottom:0;right:0;background-color:rgba(0,0,0,0.3);z-index:1001;-moz-opacity:0.3;opacity:.30;filter:alpha(opacity=30)}
+</style>
+</head>
+<body class="hold-transition login-page">
+<div id="rrapp" v-cloak>
+    <div>
+        <ul class="sidebar-menu">
+            <ul>
+	            <li>
+	                <a href="#html/usersave.html" onclick="change(this)"><i class="fa fa-bookmark"></i> 添加</a>
+	            </li>
+	            <li>
+                    <a href="#html/user.html" onclick="change(this)"><i class="fa fa-bookmark"></i> 列表</a>
+                </li>
+            </ul>
+    </div>
+    <section class="content">
+      <iframe scrolling="yes" frameborder="0" src=""></iframe>
+    </section>
+</div>
+<script language="javascript" type="text/javascript">
+function change(obj){
+    var thisObj=$(obj);
+    var allHref=thisObj.attr("href");
+    var href = allHref.substr(1,allHref.length);
+    $('iframe').attr('src',href);
+}
+</script>
+</body>
+</html>
